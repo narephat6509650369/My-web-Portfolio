@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 
 const About = () => {
@@ -206,9 +207,8 @@ const About = () => {
           </div>
 
           {/* CTA */}
-  
           <div className="text-center mt-20">
-            <a href="/contact">
+            <Link to="/contact">
               <button className="group relative px-12 py-5 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 hover:from-pink-600 hover:via-purple-600 hover:to-pink-600 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 uppercase tracking-wide">
                 <div className="relative flex items-center gap-3">
                   <span>Get in Touch</span>
@@ -217,7 +217,7 @@ const About = () => {
                   </svg>
                 </div>
               </button>
-            </a>
+            </Link>
           </div>
          
 
