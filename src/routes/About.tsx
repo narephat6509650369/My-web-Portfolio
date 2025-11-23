@@ -206,6 +206,7 @@ const About = () => {
           </div>
 
           {/* CTA */}
+          {/*
           <div className="text-center mt-20">
             <a href="/contact">
               <button className="group relative px-12 py-5 bg-gradient-to-r from-purple-600 via-pink-600 to-purple-600 hover:from-pink-600 hover:via-purple-600 hover:to-pink-600 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 uppercase tracking-wide">
@@ -218,6 +219,7 @@ const About = () => {
               </button>
             </a>
           </div>
+          */}
 
         </div>
       </div>
