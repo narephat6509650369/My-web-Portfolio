@@ -9,7 +9,7 @@ const Project = () => {
       id: 1,
       title: 'TUFIX Application',
       subtitle: 'University Maintenance Reporting App',
-      status: 'Prototype',
+      status: 'Finished',
       icon: '🔧',
       featured: true,
       tags: ['Figma', 'UX/UI Design', 'Prototyping'],
@@ -34,7 +34,7 @@ const Project = () => {
       id: 2,
       title: 'DeeSkin',
       subtitle: 'Skin Cancer Detection App with AI',
-      status: 'Prototype',
+      status: 'Finished',
       icon: '🤖',
       featured: true,
       tags: ['Python', 'EfficientNetV2L', 'Machine Learning', 'UX/UI'],
@@ -56,8 +56,39 @@ const Project = () => {
       ],
       github: "https://github.com/narephat6509650369/DeeSkin"
     },
-    {
+     {
       id: 3,
+      title: 'My Portfolio',
+      subtitle: 'Personal Portfolio Website',
+      status: 'Finished',
+      icon: '💻',
+      featured: true,
+      tags: ['React', 'TypeScript', 'Tailwind CSS', 'Responsive Design'],
+      color: 'from-cyan-600/20 to-blue-600/20',
+      borderColor: 'border-cyan-500/30',
+      situation: 'As a Computer Science student and aspiring full-stack developer, I needed a modern, visually appealing portfolio website to showcase my projects, skills, and experience to potential employers, collaborators, and the tech community. A static resume was no longer sufficient to demonstrate my capabilities.',
+      task: 'Build a professional, interactive portfolio website that effectively showcases projects, demonstrates technical skills, provides clear contact information, and reflects modern web design practices. The site should be fully responsive, performant, and serve as a compelling digital presence.',
+      actions: [
+        'Built the entire website using React with TypeScript for type safety and better code quality',
+        'Implemented responsive design with Tailwind CSS, ensuring seamless experience across mobile, tablet, and desktop devices',
+        'Designed and developed multiple pages: Home, About, Projects, and Contact with smooth navigation and routing',
+        'Created dynamic project showcase with expandable cards, allowing visitors to explore detailed project information including situation, task, actions, and results',
+        'Integrated interactive features including animated backgrounds, hover effects, gradient animations, and smooth transitions for an engaging user experience',
+        'Set up contact form with EmailJS integration for direct communication capabilities',
+        'Implemented smooth scrolling, parallax effects, and custom animations using CSS and React hooks',
+        'Optimized performance and ensured accessibility standards throughout the application'
+      ],
+      results: [
+        'Delivered a professional, fully functional portfolio website that effectively communicates technical expertise and showcases major projects with detailed information',
+        'Created a responsive, modern design that provides excellent user experience across all devices with smooth animations and intuitive navigation',
+        'Established a strong digital presence that demonstrates full-stack development skills (React, TypeScript, UI/UX, responsive design) and serves as a living resume',
+        'Integrated functional contact system enabling potential employers and collaborators to reach out directly',
+        'Built a scalable, maintainable codebase using best practices, component-based architecture, and TypeScript for future enhancements'
+      ],
+      github: 'https://github.com/narephat6509650369/My-web-Portfolio'
+    },
+    {
+      id: 4,
       title: 'POCKET App',
       subtitle: 'Income & Expense Tracking Application',
       status: 'Published',
@@ -84,7 +115,7 @@ const Project = () => {
       github: 'https://github.com/narephat6509650369/Pocket_App'
     },
     {
-      id: 4,
+      id: 5,
       title: 'Tantawan Rent Books',
       subtitle: 'Online Book Rental Web Application',
       status: 'Live',
