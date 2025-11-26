@@ -84,7 +84,7 @@ function Home() {
 
           {/* GitHub Button */}
           <a 
-            href="https://github.com/narephat" 
+            href="https://github.com/narephat6509650369/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group relative px-10 py-5 bg-white/5 backdrop-blur-md border-2 border-white/20 rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:border-blue-400/70 hover:bg-white/10"
