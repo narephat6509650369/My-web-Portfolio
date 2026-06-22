@@ -166,7 +166,7 @@ const Project = () => {
         'Gained hands-on experience in the .NET ecosystem, EF Core ORM patterns, and PostgreSQL integration',
         'Established a solid foundation for future C# backend projects'
       ],
-      github: 'https://github.com/narephat6509650369/InventoryManagementSystem'
+      github: 'https://github.com/narephat6509650369/Inventory-System'
     },
     {
       id: 7,
@@ -192,7 +192,7 @@ const Project = () => {
         'Demonstrated full-stack proficiency across Angular, Next.js, and backend API design in one project',
         'Built a scalable, maintainable architecture that can serve as a template for future full-stack projects'
       ],
-      github: 'https://github.com/narephat6509650369/Taskflow'
+      github: 'https://github.com/narephat6509650369/task-management'
     },
     {
       id: 8,
@@ -218,7 +218,7 @@ const Project = () => {
         'Currently expanding features including itinerary management and expense tracking',
         'Gaining deep experience in real-time systems, multi-user state synchronization, and collaborative UX design'
       ],
-      github: 'https://github.com/narephat6509650369/TripMate'
+      github: 'https://github.com/narephat6509650369/my-tripmate-wepapp'
     },
   ];
 
