@@ -139,7 +139,87 @@ const Project = () => {
         'Received positive feedback from users and stakeholders'
       ],
       github: 'https://github.com/narephat6509650369/TantawanRentBooks'
-    }
+    },
+    {
+      id: 6,
+      title: 'Inventory Management System',
+      subtitle: 'RESTful Inventory API with Role-Based Access',
+      status: 'Finished',
+      icon: '📦',
+      featured: false,
+      tags: ['C#', 'ASP.NET Core 8', 'PostgreSQL', 'JWT', 'Entity Framework'],
+      color: 'from-indigo-600/20 to-violet-600/20',
+      borderColor: 'border-indigo-500/30',
+      position: 'Backend Developer',
+      duration: '2024',
+      situation: 'Wanted to explore the .NET ecosystem hands-on — specifically C# backend development, Entity Framework Core ORM, and JWT authentication patterns in a statically-typed environment.',
+      task: 'Build a production-ready RESTful inventory management API with role-based access control, stock tracking, and a Swagger UI for documentation.',
+      actions: [
+        'Built full CRUD API for product management with real-time stock status (In Stock / Low Stock / Out of Stock)',
+        'Implemented JWT authentication with role-based access control (admin/user) via custom middleware',
+        'Designed PostgreSQL schema with Entity Framework Core, including auto-migration on startup',
+        'Added product search, category filtering, and dashboard summary endpoint',
+        'Documented all endpoints through Swagger UI'
+      ],
+      results: [
+        'Delivered a fully functional inventory API with clean architecture and role-based security',
+        'Gained hands-on experience in the .NET ecosystem, EF Core ORM patterns, and PostgreSQL integration',
+        'Established a solid foundation for future C# backend projects'
+      ],
+      github: 'https://github.com/narephat6509650369/InventoryManagementSystem'
+    },
+    {
+      id: 7,
+      title: 'Taskflow',
+      subtitle: 'Full-Stack Kanban Task Management System',
+      status: 'Finished',
+      icon: '🗂️',
+      featured: true,
+      tags: ['Angular 17', 'Next.js 14', 'TypeScript', 'MySQL', 'Prisma ORM', 'Docker'],
+      color: 'from-sky-600/20 to-indigo-600/20',
+      borderColor: 'border-sky-500/30',
+      situation: 'Needed a production-ready project that combined modern frontend frameworks, full-stack API development, and containerized deployment — all in a single cohesive system.',
+      task: 'Design and build a complete full-stack Kanban task manager with drag-and-drop UI, JWT authentication, and Docker Compose deployment — runnable with a single command.',
+      actions: [
+        'Built Kanban board UI with Angular 17 (Standalone Components, Signals) and drag-and-drop functionality',
+        'Developed RESTful APIs with Next.js 14 (App Router), Zod validation, and full CRUD task management',
+        'Secured all routes with JWT auth, bcrypt password hashing, and a reusable withAuth() middleware',
+        'Modeled MySQL schemas with Prisma ORM for type-safe database access',
+        'Containerized the full stack (frontend, backend, database) via Docker Compose for one-command deployment'
+      ],
+      results: [
+        'Delivered a production-ready Kanban system deployable with a single docker compose up command',
+        'Demonstrated full-stack proficiency across Angular, Next.js, and backend API design in one project',
+        'Built a scalable, maintainable architecture that can serve as a template for future full-stack projects'
+      ],
+      github: 'https://github.com/narephat6509650369/Taskflow'
+    },
+    {
+      id: 8,
+      title: 'TripMate',
+      subtitle: 'Collaborative Real-Time Trip Planning App',
+      status: 'In Development',
+      icon: '✈️',
+      featured: false,
+      tags: ['Node.js', 'Express', 'WebSocket', 'SQL', 'React', 'Next.js'],
+      color: 'from-teal-600/20 to-cyan-600/20',
+      borderColor: 'border-teal-500/30',
+      position: 'Full-Stack Developer',
+      situation: 'Group trip planning is often scattered across multiple apps — chats, spreadsheets, polls. The goal was to build a single collaborative platform for groups to plan trips together in real time.',
+      task: 'Architect and implement a full-stack collaborative trip planning web app with real-time updates, group voting, itinerary management, and expense splitting.',
+      actions: [
+        'Designed RESTful API architecture and database schema covering trips, members, voting, and itineraries',
+        'Implemented real-time updates via WebSocket for live group voting sessions',
+        'Built frontend components for trip management and group voting flows',
+        'Integrated expense splitting logic for shared group costs'
+      ],
+      results: [
+        'Established a solid real-time collaboration foundation using WebSocket architecture',
+        'Currently expanding features including itinerary management and expense tracking',
+        'Gaining deep experience in real-time systems, multi-user state synchronization, and collaborative UX design'
+      ],
+      github: 'https://github.com/narephat6509650369/TripMate'
+    },
   ];
 
   return (

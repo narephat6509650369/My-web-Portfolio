@@ -3,10 +3,14 @@ import Navbar from '../components/Navbar';
 
 const About = () => {
   const skills = {
-    'Frontend': ['React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'HTML/CSS'],
-    'Backend': ['Java', 'SQL', 'API Integration', 'Node.js'],
-    'Mobile': ['Kotlin', 'Android', 'React Native'],
-    'Tools': ['Git', 'Firebase', 'RESTful APIs', 'Database Design']
+    'Languages': ['Python', 'JavaScript / TypeScript', 'Java', 'C#', 'C/C++', 'Kotlin'],
+    'Frontend': ['React', 'Next.js', 'Angular', 'React Native', 'Tailwind CSS', 'HTML/CSS'],
+    'Backend': ['Node.js', 'Express', 'ASP.NET Core', 'Spring Boot', 'RESTful APIs'],
+    'Database': ['MySQL', 'PostgreSQL', 'MongoDB', 'SQL', 'Prisma ORM'],
+    'ML / AI': ['TensorFlow', 'EfficientNet', 'Data Augmentation', 'Model Evaluation'],
+    'DevOps & Tools': ['Docker', 'Git & GitHub', 'Firebase', 'Swagger', 'JWT Auth'],
+    'Design': ['Figma', 'UX/UI Prototyping', 'User Research', 'Wireframing'],
+    'Mobile': ['Android (Java/Kotlin)', 'React Native', 'Cross-platform Dev']
   };
 
   const experiences = [
@@ -48,10 +52,32 @@ const About = () => {
     {
       degree: 'Bachelor of Science in Computer Science',
       school: 'Thammasat University',
-      status: 'Currently Studying',
+      status: 'Class of 2025',
       icon: '🎓'
     }
   ];
+
+  const skillCategoryColors: Record<string, string> = {
+    'Languages':        'from-purple-600/10 to-violet-600/10 border-purple-500/30 hover:border-purple-500/60',
+    'Frontend':         'from-blue-600/10 to-cyan-600/10 border-blue-500/30 hover:border-blue-500/60',
+    'Backend':          'from-green-600/10 to-emerald-600/10 border-green-500/30 hover:border-green-500/60',
+    'Database':         'from-orange-600/10 to-amber-600/10 border-orange-500/30 hover:border-orange-500/60',
+    'ML / AI':          'from-pink-600/10 to-rose-600/10 border-pink-500/30 hover:border-pink-500/60',
+    'DevOps & Tools':   'from-teal-600/10 to-cyan-600/10 border-teal-500/30 hover:border-teal-500/60',
+    'Design':           'from-fuchsia-600/10 to-pink-600/10 border-fuchsia-500/30 hover:border-fuchsia-500/60',
+    'Mobile':           'from-indigo-600/10 to-blue-600/10 border-indigo-500/30 hover:border-indigo-500/60',
+  };
+
+  const skillDotColors: Record<string, string> = {
+    'Languages':        'from-purple-400 to-violet-400',
+    'Frontend':         'from-blue-400 to-cyan-400',
+    'Backend':          'from-green-400 to-emerald-400',
+    'Database':         'from-orange-400 to-amber-400',
+    'ML / AI':          'from-pink-400 to-rose-400',
+    'DevOps & Tools':   'from-teal-400 to-cyan-400',
+    'Design':           'from-fuchsia-400 to-pink-400',
+    'Mobile':           'from-indigo-400 to-blue-400',
+  };
 
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden relative">
@@ -78,7 +104,7 @@ const About = () => {
                 Me
               </span>
             </h1>
-            <p className="text-gray-400 text-lg">Computer Science Student | Full-Stack Developer | Tech Enthusiast</p>
+            <p className="text-gray-400 text-lg">Computer Science Graduate · Full-Stack Developer · Mobile & Backend</p>
           </div>
 
           {/* Introduction */}
@@ -88,10 +114,13 @@ const About = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-white">Hello! I'm Narephat</h2>
                 <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                  I'm a Computer Science student at <span className="text-purple-400 font-semibold">Thammasat University</span> with hands-on experience across mobile development, frontend development, backend integration, and full-stack application delivery.
+                  I'm a Computer Science graduate from <span className="text-purple-400 font-semibold">Thammasat University (Class of 2025)</span> with hands-on experience building full-stack web applications, mobile apps, and machine learning systems.
+                </p>
+                <p className="text-gray-300 text-lg leading-relaxed mb-4">
+                  My core stack spans <span className="text-pink-400 font-semibold">Python, TypeScript, Java, and C#</span> on the language side, with frameworks like <span className="text-blue-400 font-semibold">React, Angular, Next.js, Node.js, and ASP.NET Core</span> for building products end-to-end.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  With a strong foundation in <span className="text-pink-400 font-semibold">Java, Kotlin, JavaScript, TypeScript, and SQL</span>, I enjoy building applications that are functional, user-focused, and scalable. I'm passionate about cloud technologies, backend engineering, and creating elegant solutions to complex problems.
+                  I'm currently exploring <span className="text-teal-400 font-semibold">Microservices, Spring Boot, Kafka, and Docker</span> — and always looking for opportunities to build impactful products and grow as an engineer.
                 </p>
               </div>
             </div>
@@ -147,13 +176,13 @@ const About = () => {
               {Object.entries(skills).map(([category, items]) => (
                 <div 
                   key={category}
-                  className="bg-gradient-to-br from-purple-600/10 to-pink-600/10 backdrop-blur-md border border-purple-500/30 rounded-2xl p-8 hover:border-purple-500/60 transition-all duration-300 hover:scale-105"
+                  className={`bg-gradient-to-br ${skillCategoryColors[category]} backdrop-blur-md border rounded-2xl p-8 transition-all duration-300 hover:scale-105`}
                 >
                   <h3 className="text-xl font-bold mb-6 text-white">{category}</h3>
                   <ul className="space-y-3">
                     {items.map((skill, i) => (
                       <li key={i} className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors">
-                        <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full" />
+                        <span className={`w-2 h-2 bg-gradient-to-r ${skillDotColors[category]} rounded-full flex-shrink-0`} />
                         {skill}
                       </li>
                     ))}
@@ -197,10 +226,10 @@ const About = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-4 text-white">My Vision</h2>
                 <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                  I am passionate about cloud technologies, backend engineering, and building scalable systems. I'm currently exploring cloud fundamentals and plan to pursue further studies in cloud computing.
+                  I'm passionate about backend engineering, microservices architecture, and building scalable distributed systems. Currently deepening my knowledge of <span className="text-teal-400 font-semibold">Spring Boot, Kafka, and Docker</span> to work at the infrastructure level.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  I am eager to grow as a software developer and open to opportunities in development, internships, and future international roles. Let's build something amazing together!
+                  I'm actively seeking opportunities in Full-Stack Development, Backend Engineering, or Mobile Development — including internships and future international roles. Let's build something amazing together!
                 </p>
               </div>
             </div>
@@ -219,7 +248,6 @@ const About = () => {
               </button>
             </Link>
           </div>
-         
 
         </div>
       </div>
